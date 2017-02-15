@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="foundation-6.3.0-complete/css/foundation.css">
+    <link type= "text/css" rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>Bmi calculator</title>
     <script src="src/person.js"></script>
@@ -36,30 +37,47 @@
 </script>
   </head>
   <body>
-    <h1>Calculate your bmi with metric formula</h1>
-    <form>
-      <input type="text" id="weight" placeholder="Weight">
-      <input type="text" id="height" placeholder="Height">
-      <input type="button" id="calculate" value="Calculate">
-    </form>
-    <div>
-      <span id="display_value"></span>
-      <span id="display_message"></span>
-      <span id="display_result"></span>
 
-    </div>
-    <h1>Calculate your bmi with imperial formula</h1>
-    <form>
-      <input type="text" id="pounds" placeholder="Pounds">
-      <input type="text" id="feet" placeholder="Feet">
-      <input type="text" id="inches" placeholder="Inches">
-      <input type="button" id="calculate_imperial" value="Calculate_imperial">
-    </form>
-    <div>
-      <span id="display_value_imp"></span>
-      <span id="display_message_imp"></span>
-      <span id="display_result_imp"></span>
+    <div class="row column medium-5 medium-centered">
+      <ul class="tabs text-center" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Calculate BMI with metric formula</a></li>
+        <li class="tabs-title"><a href="#panel2">Calculate BMI with imperial formula</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <h1>Calculate your bmi with metric formula</h1>
+          <form>
+            <input type="text" id="weight" placeholder="Weight">
+            <input type="text" id="height" placeholder="Height">
+            <input type="button" id="calculate" value="Calculate">
+          </form>
+          <div>
+            <span id="display_value"></span>
+            <span id="display_message"></span>
+            <span id="display_result"></span>
 
+          </div>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <h1>Calculate your bmi with imperial formula</h1>
+          <form>
+            <input type="text" id="pounds" placeholder="Pounds">
+            <input type="text" id="feet" placeholder="Feet">
+            <input type="text" id="inches" placeholder="Inches">
+            <input type="button" id="calculate_imperial" value="Calculate">
+          </form>
+          <div>
+            <span id="display_value_imp"></span>
+            <span id="display_message_imp"></span>
+            <span id="display_result_imp"></span>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="foundation-6.3.0-complete/js/vendor/jquery.js"></script>
+    <script src="foundation-6.3.0-complete/js/vendor/what-input.js"></script>
+    <script src="foundation-6.3.0-complete/js/vendor/foundation.js"></script>
+    <script src="foundation-6.3.0-complete/js/app.js"></script>
   </body>
 </html>
